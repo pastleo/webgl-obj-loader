@@ -731,7 +731,7 @@ export class MaterialLibrary {
         }
 
         // some cleanup. These don't need to be exposed as public data.
-        delete this.data;
+        this.data = '';
         this.currentMaterial = SENTINEL_MATERIAL;
     }
 

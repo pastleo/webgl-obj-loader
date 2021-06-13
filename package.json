@@ -13,7 +13,8 @@
         "coverage": "nyc npm test",
         "coverage:report": "nyc report -r html",
         "prettify": "prettier --write src/**/*.ts",
-        "publish": "yarn release && npm publish"
+        "publish": "yarn release && npm publish",
+        "build-esm": "webpack --config webpack.module.js"
     },
     "prettier": {
         "printWidth": 120,
@@ -57,10 +58,11 @@
         "mocha": "6.2.2",
         "nyc": "^14.1.1",
         "prettier": "1.18.2",
+        "ts-loader": "^9.2.3",
         "ts-node": "8.4.1",
-        "typescript": "3.6.4",
-        "webpack": "^4.41.2",
-        "webpack-cli": "3.3.9",
+        "typescript": "^4.3.2",
+        "webpack": "^5.38.1",
+        "webpack-cli": "^4.7.2",
         "webpack-merge": "^4.2.2"
     }
 }
